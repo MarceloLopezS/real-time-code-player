@@ -185,7 +185,7 @@ footer {
 
 .main-section {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     max-width: 120rem;
     flex-grow: 1;
 }
