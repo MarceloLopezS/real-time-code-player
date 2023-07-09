@@ -1,22 +1,21 @@
 # Real Time Code X
 
-This is a simple online real-time Front-End editor developed with HTML, CSS and Vanilla JavaScript.
+This is a simple real-time Front-End editor developed with HTML, CSS and Vanilla JavaScript. It allows the user to write and execute HTML, CSS, and JS in real time by providing input code in the corresponding sections and recieving the output in another one.
 
-JavaScript code is intended to create an interactive web interface that allows the user to write and execute HTML, CSS, and JS code in real time. To do this, the code uses the following elements:
+The app is intended to create a simple and intuitive interface with optimal experience across desktop devices, even with different screen resolutions. For this, the most recent CSS features, along with semantic HTML, and up-to-date JavaScript technologies are used.
 
-- A navigation bar with three tabs that correspond to each web programming language.
-- A main section with three text areas where the user can write the code for each language.
-- An iframe where the result of the executed code is displayed.
+The main logic is implemented in JavaScript, which is driven towards Functional Programming and it's centered in clean, readable code with good practices. This code is divided in three main sections for legibility: *DOM Elements*, *Main* and *Functions*.
 
-The JavaScript code performs the following actions:
+The *DOM Elements* section stores the elements that will be manipulated to achieve the editors's visual functionallity and interactivity.
 
-- Select the elements of the HTML document using the class and attribute selectors.
-- Create a style element and add it to the head of the iframe to apply the CSS code.
-- Define a function that sets the visibility and position of the sections based on the active tab of the navigation bar.
-- Define a function that toggles the data-active attribute of the clicked tab and calls the above function to update the visibility of the sections.
-- Defines a function that updates the content of the iframe with the HTML and JS code written by the user.
-- Add a click event on each navbar tab to call the corresponding section toggle function.
-- Add an input event to each textarea to call the update iframe function.
-- Call the update iframe function at the beginning of the code to display the initial result.
+The *Main* section sets the iframe's style tag and the event listeners for the tabs, as well as the listeners for the code sections. It also updates the output for the initial example code provided by calling `updateOutput()`.
 
-The JavaScript code is an example of how to use events, functions, and selectors to create a dynamic and reactive web interface.
+The *Functions* section contains all the necessary functions for the app to work. These are:
+
+- `setSectionsVisibility(...navbarTabs)`: Shows or hides sections based on their corresponding active tabs from the navigation bar. These tabs are passed as arguments.
+
+- `toggleSection(event)`: Toggles the `data-active` attribute from the clicked tab and set's it's visibility accordigly by calling the `setSectionsVisibility` function.
+
+- `updateOutput()`: Takes the input from the user and updates the iframe's content to output the corresponding result.
+
+This project is mainly a use example of CSS for responsiveness across devices and JavaScript for interactivity by implementing DOM manipulation and Event Listeners using the latest ECMAScript features such as template strings, arrow functions, spread syntax, etc.
