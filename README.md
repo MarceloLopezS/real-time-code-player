@@ -4,7 +4,7 @@ This is a simple real-time Front-End editor developed with HTML, CSS and Vanilla
 
 The app is intended to create a simple and intuitive interface with optimal experience across desktop devices, even with different screen resolutions. For this, the most recent CSS features, along with semantic HTML, and up-to-date JavaScript technologies are used.
 
-The main logic is implemented in JavaScript, which is driven towards Functional Programming and it's centered in clean, readable code with good practices. This code is divided in three main sections for legibility: *DOM Elements*, *Main* and *Functions*.
+The main logic is implemented in JavaScript, which is driven towards Functional Programming and it's centered in clean, readable code with good practices. It's divided in three main sections: *DOM Elements*, *Main* and *Functions*.
 
 The *DOM Elements* section stores the elements that will be manipulated to achieve the editors's visual functionallity and interactivity.
 
